@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGIS Sederhana</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle Sidebar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="sidebar-header">
+      <span class="sidebar-title">WEBGIS</span>
+      <small class="sidebar-subtitle">Swalayan Kefamenanu</small>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#" id="home-link"><i class="bi bi-house"></i> <span>Beranda</span></a></li>
+      <li><a href="#" id="swalayan-link"><i class="bi bi-geo-fill"></i> <span>Peta Swalayan</span></a></li>
+      <li class="sidebar-label"><i class="bi bi-list-task"></i> <span>Anggota Kelompok</span></li>
+      <li>
+        <a href="#" id="anggota-51230145">
+          <img src="aset/51230145.jpg" class="foto-bulat-kecil" alt="Imanuel">
+          <span class="nama-kecil">IMANUEL JULIANTO UGUR</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="anggota-51230122">
+          <img src="aset/51230122.png" class="foto-bulat-kecil" alt="Anita">
+          <span class="nama-kecil">ANITA DEROJA V. T SERAN</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="anggota-51230151">
+          <img src="aset/51230151.png" class="foto-bulat-kecil" alt="Marsel">
+          <span class="nama-kecil">MARSELINUS M. K. KOFI OLIN</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="anggota-51230159">
+          <img src="aset/51230159.jpg" class="foto-bulat-kecil" alt="Randy">
+          <span class="nama-kecil">RANDY YOHANES LUTI</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="anggota-51230168">
+          <img src="aset/51230168.png" class="foto-bulat-kecil" alt="Vence">
+          <span class="nama-kecil">VINSENTIUS DEPAULO NAIHAUF</span>
+        </a>
+      </li>
+
+    </ul>
+    <div class="sidebar-footer">
+      <small>&copy; 2025 Kelompok 1</small>
+    </div>
+  </nav>
+
+  <!-- Tambahkan ini setelah sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main>
+    <div id="content-area">
+      <!-- Section Tentang WebGIS -->
+      <section id="tentang-webgis" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-4 animate__animated animate__fadeIn">
+            <h2 class="fw-bold">🌍 Apa itu WebGIS?</h2>
+            <p class="lead">Sistem Informasi Geografis berbasis Web yang mudah diakses, interaktif, dan informatif.</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card shadow-sm mb-4 animate__animated animate__fadeInUp">
+                <div class="card-body">
+                  <p>
+                    <strong>WebGIS (Web Geographic Information System)</strong> adalah sistem informasi geografis yang diakses melalui internet. WebGIS memungkinkan pengguna untuk <strong>melihat, menganalisis, dan berbagi data spasial</strong> secara interaktif melalui browser web.
+                  </p>
+
+                  <div class="features-grid">
+                    <div class="feature-item">
+                      <i class="bi bi-map"></i>
+                      <span>Peta Interaktif</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-search"></i>
+                      <span>Pencarian Lokasi</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-pin-map"></i>
+                      <span>Navigasi</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-info-circle"></i>
+                      <span>Informasi Detail</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card-header bg-primary text-white">
+                  <h5 class="mb-0">💡 Manfaat WebGIS</h5>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Perencanaan wilayah dan tata ruang</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Manajemen sumber daya alam</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Transportasi dan infrastruktur</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Mitigasi bencana</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Lingkungan dan kehutanan</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Layanan publik</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Fungsi untuk set active menu
+      function setActiveMenu(menuId) {
+        $('.sidebar-menu a').removeClass('active');
+        $('#' + menuId).addClass('active');
+      }
+
+      // Saat halaman pertama kali dimuat, aktifkan Home
+      setActiveMenu('home-link');
+
+      // Klik menu Swalayan
+      $('#swalayan-link').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('swalayan.html', function() {
+          if (typeof initMapSwalayan === 'function') {
+            initMapSwalayan();
+          }
+          setActiveMenu('swalayan-link');
+        });
+      });
+
+      // Klik menu Home
+      $('#home-link').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('index.html #tentang-webgis', function() {
+          setActiveMenu('home-link');
+        });
+      });
+      // Klik anggota 51230145
+      $('#anggota-51230145').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('51230145.html', function() {
+          setActiveMenu('anggota-51230145');
+        });
+      });
+      // Klik anggota 51230122  
+      $('#anggota-51230122').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('51230122.html', function() {
+          setActiveMenu('anggota-51230122');
+        });
+      }); 
+      // Klik anggota 51230151
+      $('#anggota-51230151').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('51230151.html', function() {
+          setActiveMenu('anggota-51230151');
+        });
+      });
+      // Klik anggota 51230159
+      $('#anggota-51230159').on('click', function(e) {  
+        e.preventDefault();
+        $('#content-area').load('51230159.html', function() {
+          setActiveMenu('anggota-51230159');
+        });
+      });
+      // Klik anggota 51230168
+      $('#anggota-51230168').on('click', function(e) {
+        e.preventDefault();
+        $('#content-area').load('51230168.html', function() {
+          setActiveMenu('anggota-51230168');
+        });
+      });
+
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

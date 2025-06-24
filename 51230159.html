@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Remix Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        *{
+  font-family: "Arial Black", sans-serif;
+  color: #fff;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;                  /* tinggi penuh viewport */
+  display: flex;
+  justify-content: center;        /* center horizontal */
+  align-items: center;            /* center vertical */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #101d34);
+  color: #f0f0f0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 0 10%;
+}
+
+header h1{
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  cursor: default;
+  font-size: 2.1em;
+  transition: 1s;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+header h1:hover{
+  color: white;
+  text-shadow: 0 0 40px white;
+}
+
+.navbar a{
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: .5s;
+  cursor: pointer;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar .active{
+  color: #6bdcff;
+}
+
+.navbar a:hover{
+  text-shadow: 0 0 40px #9ee8ff;
+}
+
+section{
+  margin: 5% 10%;
+  display: flex;
+  align-items: center;
+}
+
+section h2{
+  font-size: 2em;
+  margin: 0 0 0 0;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards 1.4s;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  transition: .5s;
+}
+
+section h3{
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: calc(.2s * var(--i))
+}
+
+section p{
+  font-size: 0.9em;
+  opacity: 0;
+  animation: slideTop 1s ease forwards 1.8s;
+}
+
+section img {
+  max-width: 300px;    
+  max-height: 300px;
+  border-radius: 50%; /* <-- bikin gambar jadi bulat */
+  object-fit: cover;  /* <-- supaya isi gambar tetap proporsional */
+  opacity: 0;
+  animation: slideTop 1s ease forwards 2s;
+  width: 250px;
+  height: 250px;
+}
+
+
+section .img{
+  animation: animate 5s ease-in-out infinite 3s;
+}
+
+section span a{
+  color: #0ef;
+  text-decoration: none;
+  transition: .5s;
+}
+
+section span a:hover{
+  text-shadow: 0 0 40px #fff;
+  color: white;
+}
+
+@keyframes slideBottom{
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  from{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0);
+  }
+  
+  50%{
+    transform: translateY(50px);
+  }
+  
+  100%{
+    transform: translateY(0);
+  }
+}
+    </style>
+    
+  </head>
+
+  <body>
+   <header>
+     <h1>Anggota Kelompok</h1>
+   </header>
+  
+  <section>
+    <article>
+      <h3 style="--i:6;">Hai. Nama Saya</h3>
+      <h2>Randy Yohanes Luti</h2>
+      <h3 style="--i:8;">NPM :<span><a href="https://fr.wikipedia.org/wiki/D%C3%A9veloppement_web_frontal" target="_blank" title="Wikipedia"> 51230159</a></span></h3>
+      <p>Saya adalah mahasiswa Teknologi Informasi yang antusias dalam pengelolaan data dan arsitektur sistem data. Mempunyai ketertarikan pada pemrosesan data skala besar, integrasi pipeline data, serta optimalisasi sistem penyimpanan dan analisis data.</p>
+    </article>
+    <div class="img"><img src="aset/51230159.jpg" alt=""></div>
+  </section>
+</body>
+</html>

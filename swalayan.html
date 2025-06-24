@@ -1,0 +1,30 @@
+<!-- Floating action button -->
+  <div class="fab-container">
+    <button class="fab-button" id="locateButton" title="Lokasi Saya">
+      <i class="bi bi-geo-alt-fill"></i>
+    </button>
+  </div>
+<div class="container">
+  <section class="controls animate__animated animate__fadeIn">
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Cari swalayan ..." />
+      <button id="searchBtn" title="Cari lokasi"><i class="bi bi-search"></i></button>
+    </div>
+    <div class="filter-buttons">
+      <button id="showAll" class="active"><i class="bi bi-grid-fill"></i> Semua</button>
+      <button id="showIndomart"><i class="bi bi-shop"></i> Indomart</button>
+      <button id="showAlfamart"><i class="bi bi-shop-window"></i> Alfamart</button>
+      <button id="showSwalayan"><i class="bi bi-basket2-fill"></i> Lainnya</button>
+    </div>
+  </section>
+  
+  <div class="map-container animate__animated animate__fadeIn animate__delay-1s">
+    <div id="map"></div>
+  </div>
+  
+  <div class="info-box animate__animated animate__fadeIn">
+    <div class="alert alert-info">
+      <i class="bi bi-info-circle-fill"></i> Klik pada marker untuk melihat detail lokasi swalayan
+    </div>
+  </div>
+</div>
