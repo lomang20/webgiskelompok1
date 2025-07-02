@@ -44,9 +44,9 @@ function initMapSwalayan() {
         icon: blueIcon, 
         category: "Indomart",
         image: "aset/Indomart_Pasar_Lama.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Pasar Lama No. 123, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "1500 280"
+        phone: "(0388) 1234567"
       },
       { 
         name: "Indomart Terminal",
@@ -55,9 +55,9 @@ function initMapSwalayan() {
         icon: blueIcon, 
         category: "Indomart",
         image: "aset/indo_terminal.png",
-        address: "Jl. Kefamenanu, Kefamenanu",
+        address: "Jl. Terminal No. 45, Kefamenanu",
         hours: "07:30 - 22:00",
-        phone: "1500 280"
+        phone: "(0388) 2345678"
       },
       { 
         name: "Indomart Nasleu", 
@@ -66,9 +66,9 @@ function initMapSwalayan() {
         icon: blueIcon, 
         category: "Indomart",
         image: "aset/indo_nasleu.jpg",
-        address: "Jl. Nasional Trans Timor, Kefamenanu",
+        address: "Jl. Nasleu No. 45, Kefamenanu",
         hours: "07:30 - 22:00",
-        phone: "1500 280"
+        phone: "(0388) 2345678"
       },
       { 
         name: "Indomart KM 7", 
@@ -77,9 +77,9 @@ function initMapSwalayan() {
         icon: blueIcon, 
         category: "Indomart",
         image: "aset/indo_km7.jpeg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. KM 7 No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 280"
+        phone: "(0388) 3456789"
       },
       // Tambahkan data lainnya dengan format yang sama
 
@@ -91,9 +91,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/alfa_maubeli.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Maubeli No. 67, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Alfamart Eltari", 
@@ -102,9 +102,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/alfa_eltari.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Eltari No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Alfamart Terminal", 
@@ -113,9 +113,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/indo_terminal.png",
-        address: "Jl. Kefamenanu, Kefamenanu",
+        address: "Jl. Terminal No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Alfamart Nasleu", 
@@ -124,9 +124,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/alfa_nasleu.jpg",
-        address: "Jl. Nasional Trans timor, Kefamenanu",
+        address: "Jl. Nasleu No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Alfamart KM 6", 
@@ -135,9 +135,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/alfa_km6.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. KM 6 No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Alfamart Dalehi", 
@@ -146,9 +146,9 @@ function initMapSwalayan() {
         icon: redIcon, 
         category: "Alfamart",
         image: "aset/alfa_delhi.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Dalehi No. 45, Kefamenanu",
         hours: "08:00 - 22:00",
-        phone: "1500 959"
+        phone: "(0388) 3456789"
       },
       // Tambahkan data Alfamart lainnya
       // ...
@@ -160,9 +160,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/lay.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Lay No. 88, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 1234560"
       },
       { 
         name: "Jabalmart", 
@@ -171,9 +171,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/jabalmart.png",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Pasar Baru No. 89, Kefamenanu",
         hours: "07:00 - 20:30",
-        phone: "-"
+        phone: "(0388) 4567890"
       },
       { 
         name: "KCS Mart", 
@@ -182,9 +182,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/kcs.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. KCS No. 12, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 5678901"
       },
       {
         name: "Happy Swalayan", 
@@ -193,9 +193,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/happy.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Sinar No. 34, Kefamenanu",
         hours: "07:30 - 22:00",
-        phone: "-"
+        phone: "(0388) 6789012"
       },
       { 
         name: "Central", 
@@ -204,9 +204,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/central.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Sejahtera No. 56, Kefamenanu",
         hours: "08:00 - 21:30",
-        phone: "-"
+        phone: "(0388) 7890123"
       },
       { 
         name: "Toko Aimi", 
@@ -215,9 +215,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/toko_aimi.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Aimi No. 12, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 1234567"
       },
       {
         name: "Toko Karya Baru",
@@ -226,9 +226,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/toko_karya_baru.jpeg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Karya No. 34, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 2345678"
       },
       {
         name: "Toko Rembulan",
@@ -237,9 +237,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/toko_rembulan.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Rembulan No. 45, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 3456789"
       },
       { 
         name: "Mulia Jaya Swalayan", 
@@ -248,9 +248,9 @@ function initMapSwalayan() {
         icon: greenIcon, 
         category: "Swalayan",
         image: "aset/mulia_jaya.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Mulia No. 67, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 4567890"
       },
       {
         name: "Sinar Mas",
@@ -259,9 +259,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/sinar_mas.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Sinar No. 45, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 3456789"
       },
       {
         name: "Bintang Mart",
@@ -270,9 +270,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/bintang_mart.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Bintang No. 12, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 4567890"
       },
       {
         name: "Putri Sulawesi 2",
@@ -281,9 +281,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/ps2.jpg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Putri No. 2, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 5678901"
       },
       {
         name: "Top Swalayan",
@@ -292,9 +292,9 @@ function initMapSwalayan() {
         icon: greenIcon,
         category: "Swalayan",
         image: "aset/top_swalayan.jpeg",
-        address: "Jl. Eltari, Kefamenanu",
+        address: "Jl. Top No. 1, Kefamenanu",
         hours: "08:00 - 21:00",
-        phone: "-"
+        phone: "(0388) 6789012"
       }
       // Tambahkan data swalayan lainnya
 
@@ -344,7 +344,7 @@ function initMapSwalayan() {
       
       markerRefs.forEach(function(marker) {
         var name = marker.tokoName.toLowerCase();
-        if (keyword && name.includes(keyword.toLowerCase())) {
+        if (keyword && name.split(' ').some(word => word.startsWith(keyword.toLowerCase()))) {
           bounds.extend(marker.getLatLng());
           marker.openPopup();
           found = true;
