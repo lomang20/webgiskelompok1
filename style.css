@@ -484,25 +484,35 @@ body.sidebar-closed main {
 
 /* Perbaikan untuk tampilan mobile */
 @media (max-width: 576px) {
-  .sidebar-toggle {
-    display: none; /* Sembunyikan toggle biasa di mobile */
-  }
-  
-  .sidebar-toggle-fixed {
-    display: flex; /* Tampilkan toggle fixed di mobile */
-  }
-  
+  /* .sidebar-toggle {
+    display: none;
+  } */
   .sidebar {
     transform: translateX(-100%);
     width: 280px;
-    z-index: 1001; /* Pastikan di atas overlay */
+    z-index: 1001;
   }
-  
   body.sidebar-closed .sidebar {
     transform: translateX(0);
   }
   main {
     margin-left: 0;
+  }
+  .sidebar-toggle {
+    position: fixed !important; /* <-- PENTING: selalu fixed di mobile */
+    left: 20px !important;
+    right: auto !important;
+    top: 20px !important;
+    display: flex !important;
+    z-index: 1201;
+  }
+  body.sidebar-closed .sidebar-toggle {
+    position: fixed !important; /* <-- PENTING: selalu fixed di mobile */
+    left: 20px !important;
+    right: auto !important;
+    top: 20px !important;
+    display: flex !important;
+    z-index: 1201;
   }
 }
 
@@ -656,9 +666,20 @@ body.sidebar-closed .sidebar .sidebar-toggle {
     margin-left: 0;
   }
   .sidebar-toggle {
+    position: fixed !important; /* <-- PENTING: selalu fixed di mobile */
     left: 20px !important;
     right: auto !important;
     top: 20px !important;
+    display: flex !important;
+    z-index: 1201;
+  }
+  body.sidebar-closed .sidebar-toggle {
+    position: fixed !important; /* <-- PENTING: selalu fixed di mobile */
+    left: 20px !important;
+    right: auto !important;
+    top: 20px !important;
+    display: flex !important;
+    z-index: 1201;
   }
 }
 
